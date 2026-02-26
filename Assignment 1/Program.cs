@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Net.Sockets;
 using System.Runtime.Intrinsics.X86;
 using System.Security.Claims;
 using System.Xml.Linq;
@@ -53,6 +54,77 @@ namespace Assignment_1
 
     #endregion
 
+    #endregion
+    #region Part 02
+    ////1
+    //enum TicketType
+    //{
+    //    Standard,
+    //    VIP, 
+    //    IMAX
+
+    //}
+    ////2
+    //struct Seat
+    //{
+    //    public char Row;
+    //    public int Number;
+
+    //    public Seat(char row, int number)
+    //    {  Row = row;
+    //       Number = number;
+    //    }
+
+    //    public override string ToString() => $"{Row}{Number}";
+
+    //}
+    ////3
+    //class Ticket
+    //{
+    //    public string MovieName;
+    //    public TicketType Type;
+    //    public Seat Seat;
+    //    private double Price;
+
+    //    public Ticket(string movieName, TicketType type, Seat seat, double price)
+    //    {
+    //        MovieName = movieName;
+    //        Type = type;
+    //        Seat = seat;
+    //        Price = price;
+    //    }
+    //    public Ticket(string movieName):this(movieName, TicketType.Standard,new Seat('A',1),50) {}
+    //    //4
+    //    //4.a
+    //    public double CalcTotal(double taxPercent)
+    //    { return Price + (Price * taxPercent / 100); }
+
+    //    //4.b
+    //    public void ApplyDiscount( ref double discountAmount)
+    //    {
+    //        if (discountAmount >0 && discountAmount <= Price)
+    //        {
+    //            Price -= discountAmount;
+    //            discountAmount = 0;
+
+    //        }
+    //    }
+
+    //    //4.c
+    //     public void PrintTicket(double taxPercent)
+    //    {
+    //        Console.WriteLine($"Movie : {MovieName}");
+    //        Console.WriteLine($"Type : {Type}");
+    //        Console.WriteLine($"Seat : {Seat}");
+    //        Console.WriteLine($"Price : {Price}");
+    //        Console.WriteLine($"Total ({taxPercent}% tax) : {CalcTotal(taxPercent)}");
+
+
+
+    //    }
+
+
+    //}
     #endregion
 
     internal class Program
@@ -117,6 +189,42 @@ namespace Assignment_1
             //3.👥 Teamwork — different developers work on different libraries
             //4.🔧 Maintenance — fix a bug once, all projects benefit
             #endregion
+            #endregion
+            #region Part 02
+            //const double TAX = 14;
+            //Console.Write("Enter Movie Name : ");
+            //string movieName = Console.ReadLine();
+
+            //Console.Write("Enter Ticket Type (0 = Standard , 1 = VIP , 2 = IMAX ): ");
+            //TicketType type = (TicketType)int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter Seat Row : ");
+            //char row = Console.ReadLine().ToUpper()[0];
+
+            //Console.Write("Enter Seat Number : ");
+            //int number = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter Price : ");
+            //double price = double.Parse(Console.ReadLine());
+
+            //Console.Write("Enter Discount Amount : ");
+            //double discount = double.Parse(Console.ReadLine());
+
+
+            //Ticket ticket01 = new Ticket(movieName, type, new Seat(row, number), price);
+
+
+            //Console.WriteLine("\n===== Ticket Info =====");
+            //ticket01.PrintTicket(TAX);
+
+            //Console.WriteLine("\n===== After Discount =====");
+            //double originalDiscount = discount;
+            //ticket01.ApplyDiscount(ref discount);
+            //Console.WriteLine($"Discount Before : {originalDiscount}");
+            //Console.WriteLine($"Discount After  : {discount}");
+            //ticket01.PrintTicket(TAX);
+
+
             #endregion
         }
     }
