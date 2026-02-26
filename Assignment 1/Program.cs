@@ -90,14 +90,23 @@ namespace Assignment_1
 
             #endregion
             #region Question02
-           // Person p = new Person();
+            // Person p = new Person();
 
-           // p.Name = "Ali";        //  Works — public
-           // p.SetAge(25);            //  Works — public method
-           // Console.WriteLine($"{p.Name} is {p.GetAge()} years old."); // p.age = 25;          // ❌ Error — private
-           //// public => anyone can use it. private => only the class itself can use it.
+            // p.Name = "Ali";        //  Works — public
+            // p.SetAge(25);            //  Works — public method
+            // Console.WriteLine($"{p.Name} is {p.GetAge()} years old."); // p.age = 25;          // ❌ Error — private
+            //// public => anyone can use it. private => only the class itself can use it.
             #endregion
-        #endregion
+            #region Question03
+            //1. Create the Class Library
+            //2. Write your code in the library
+            //3. Create a Console App to use it
+            //4. Add a Reference to the Library
+            //5. Use the Library in your App
+            //6. Run the Console App — Done! ✅
+
+            #endregion
+            #endregion
         }
     }
 }
