@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Runtime.Intrinsics.X86;
 using System.Security.Claims;
 using System.Xml.Linq;
@@ -105,6 +106,16 @@ namespace Assignment_1
             //5. Use the Library in your App
             //6. Run the Console App — Done! ✅
 
+            #endregion
+            #region Question04
+            // What is a class library?
+            //>> A Class Library is a separate project that contains reusable classes,
+            // but has no Main method and cannot run on its own.It compiles into a .dll file(Dynamic Link Library).
+            //Why do we use class libraries? 
+            //>>1.♻️ Reusability — write once, use in many projects
+            //2.📂 Organization — Separate concerns into different assemblies
+            //3.👥 Teamwork — different developers work on different libraries
+            //4.🔧 Maintenance — fix a bug once, all projects benefit
             #endregion
             #endregion
         }
